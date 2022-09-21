@@ -1,0 +1,47 @@
+.reviews{
+    margin: 5vh;
+    height: fit-content;
+    color: white;
+    background-color: var(--main-color);
+    
+    .reviewAction{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{ 
+            
+            height: 5vh;
+            border-left: 4px outset #d1d1d1;
+            line-height: 5vh;
+        }
+        .addReview{
+            height: 5vh;
+            width: 5vh;
+            margin-right: 5%;
+            border: 1px solid rgb(118, 118, 118);
+            background-color: rgb(57, 46, 46);
+            cursor: pointer;
+        }
+    }
+
+
+    .pageControl{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button{
+            color: rgb(1, 26, 32);
+            margin: 5px;
+            font-weight: bold;
+            width: 75px;
+            height: 25px;
+
+        }
+
+        select{
+            height: 25px;
+        }
+    }
+}

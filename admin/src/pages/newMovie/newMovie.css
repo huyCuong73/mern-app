@@ -1,0 +1,99 @@
+.newMovie {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.addMovieForm {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addMovieItem {
+  
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+
+.addMovieItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addDesc {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+.addDesc> textarea {
+  height: 15vh;
+  resize: none;
+}
+
+.addDesc> label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addMovieItem > input {
+  padding: 10px;
+}
+
+.addMovieItem > select {
+  padding: 10px;
+}
+
+.addMovieButton {
+  height: 30px;
+  /* justify-content: center; */
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+}
+
+.uploading{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addCastForm {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+
+.addPerson{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.addPerson> div{
+  width: 10%;
+  background-color: rgb(43, 158, 190);
+  border: none;
+  height: 30px;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}

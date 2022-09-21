@@ -1,0 +1,179 @@
+.bar {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.6) 70%);
+    transition: 1s;
+
+    &.scrolled{
+        background-color: #0b0b0b;
+    }
+
+    .navContainer{
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        .left {
+         display: flex;
+         width: 55%;
+         align-items: center;
+            img{
+                height: 25px;
+                margin-right: 40px;
+                max-width: 30%;
+            }
+
+            span{
+                margin: 0 10px 0 10px;
+                cursor: pointer;
+            }
+        }
+        .right{
+            width: 45%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .navSearch{
+                color: white;
+                display: flex;
+                justify-content: flex-end;
+        
+                .iconSearch{
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    transform: translateX(-24px) translateY(10px);
+                    color: rgb(255, 252, 252);
+                }
+        
+                input{
+                    font-size: 14px;
+                    border: 1px solid;
+                    color: white;
+                    outline: none;
+                    width: 0;
+                    padding: 10px;
+                    cursor: pointer;
+                    opacity: 0;
+                    background-color: #222;
+                    transition: width 0.5s;
+                    z-index: 99;
+
+                    &:focus {
+                        padding-right: 24px;
+                        width: 100%;
+                        cursor: text;
+                        opacity: 1;
+                        border-radius: 4px;
+                        opacity: 0.7;
+                    }
+                }
+            }
+            
+            .icon{
+                margin:  0px 5px;
+                cursor: pointer;
+            }
+
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
+            .userName{
+                max-width: 20%;
+                font-size: 11px;
+                font-weight: bold;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                margin-left: 10px;
+                margin-right: 5px;
+            }
+
+            .profile{
+                .options{
+                    display: none;
+                    background-color: #0b0b0b;
+                }
+
+                span{
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                &:hover{
+                    .options{
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // .navSearch{
+    //     color: white;
+    //     display: flex;
+    //     justify-content: flex-start;
+
+    //     .iconSearch{
+    //         width: 20px;
+    //         height: 20px;
+    //         cursor: pointer;
+    //         transform: translateX(24px) translateY(10px);
+    //         color: #bbb;
+    //     }
+
+    //     input{
+    //         font-size: 14px;
+    //         border: 1px solid;
+    //         color: white;
+    //         outline: none;
+    //         width: 0;
+    //         padding: 10px;
+    //         cursor: pointer;
+    //         opacity: 0;
+    //         background-color: #222;
+    //         transition: width 0.5s;
+
+    //         &:focus {
+    //             padding-left: 24px;
+    //             width: 300px;
+    //             cursor: text;
+    //             opacity: 1;
+    //             border-radius: 4px;
+    //         }
+    //     }
+    // }

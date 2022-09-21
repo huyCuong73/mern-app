@@ -1,0 +1,146 @@
+.list {
+    width: 100%;
+    margin-top: 50px;
+  
+    .listTitle {
+      
+      color: white;
+      font-size: 30px;
+      font-weight: 500;
+      width: 90vw;
+      margin: 2vw;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .listName{
+        line-height: 5vmin;
+        height:5vmin;
+        width: 80vw;
+        text-align: center;
+        border: 0.5vmin solid  rgb(54, 53, 53);
+        border-left:  1vmin solid  rgb(171, 176, 6);
+      }
+
+      .listArrow{
+        height: 6vmin;
+        width: 10vw;
+        background-color: rgb(54, 53, 53);
+
+        path{
+          height: 60%;
+        }
+      }
+    }
+  
+    .wrapper {
+      position: relative;
+      margin: 0 10px 0 10px;
+
+      .sliderArrow {
+        width: 50px;
+        height: 50%;
+        background-color: rgb(22, 22, 22, 0.5);
+        color: white;
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        cursor: pointer;
+        border: 1px solid;
+        border-radius: 7px;
+  
+        &.left {
+          left: 0;
+        }
+  
+        &.right {
+          right: 0;
+        }
+      }
+      .filmContainer{
+        position: relative;
+        height: fit-content;
+        height: 500px;
+        width: 92%;
+        left: 4%;
+        overflow: hidden;
+        
+        .container {
+          position: absolute;
+          height: 80%;
+          display: flex;
+          top:10%;
+          bottom: 10%;
+          
+          width: max-content;
+          transform: translateX(0px);
+          transition: all 1s ease;
+
+          a{
+            text-decoration: none!important;
+          }
+        }
+      }
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .list {
+//     width: 100%;
+//     margin-top: 10px;
+  
+//     .listTitle {
+//       color: white;
+//       font-size: 20px;
+//       font-weight: 500;
+//       margin-left: 50px;
+//     }
+  
+//     .wrapper {
+//       position: relative;
+//       .sliderArrow {
+//         width: 50px;
+//         height: 100%;
+//         background-color: rgb(22, 22, 22, 0.5);
+//         color: white;
+//         position: absolute;
+//         z-index: 99;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         cursor: pointer;
+  
+//         &.left {
+//           left: 0;
+//         }
+  
+//         &.right {
+//           right: 0;
+//         }
+//       }
+//       .container {
+//         margin-left: 50px;
+//         display: flex;
+//         margin-top: 10px;
+//         width: max-content;
+//         transform: translateX(0px);
+//         transition: all 1s ease;
+//       }
+//     }
+//   }
+  

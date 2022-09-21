@@ -1,0 +1,61 @@
+.commentModal{
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    background-color: rgb(25, 25, 25);
+    opacity: 0.98;
+    padding: 2vw;
+    z-index: 99;
+    
+    .closeModal{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 15px;
+        right: 15px;
+        background-color: rgb(53, 46, 102);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .reviewWrapper{
+        margin-top: 5vh;
+        .reviewHeadline{
+        
+            input{
+                width: 100%;
+                font-family: sans-serif;
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+    
+        }
+    
+        .reviewBody{
+            textarea{
+                margin-top: 10px;
+                width: 100%;
+                height: 60vh;
+                resize: none;
+                font-family: sans-serif;
+            } 
+        }
+    }
+    .submitWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        height: 5vh;
+
+        button{
+            width: 40%;
+            font-weight: bold;
+            background-color: rgb(64, 63, 126);
+            color: aliceblue;
+            cursor: pointer;
+        }
+    }
+}

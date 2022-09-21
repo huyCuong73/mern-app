@@ -1,0 +1,34 @@
+:root{
+    --background-image: url("https://picsum.photos/1000/700");
+    --main-color: rgb(17, 17, 17);
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--main-color);
+
+    .link{
+        color: white;
+        text-decoration: none!important;
+    }
+    
+}
+
+
+.active {
+    background-color: red;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, transparent 0%, rgba(80, 80, 80, 0.9) 70%);
+}
+
+.loading{
+    position:fixed;
+    color: white;
+    top: 50%;
+    left: 50%;
+    translate: transform(-50%,-50%)
+}

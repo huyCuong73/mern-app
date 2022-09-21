@@ -1,0 +1,12 @@
+GET https://api.themoviedb.org/3/movie/550?api_key=78161154b42069078a1530071ebee68d
+
+###
+
+POST https://react-rating-app-thc.herokuapp.com/api/auth/register
+
+{
+    "username":"test",
+    "email": "test",
+    "password": "test"
+}
+

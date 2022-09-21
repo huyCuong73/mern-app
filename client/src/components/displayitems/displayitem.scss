@@ -1,0 +1,66 @@
+.itemContainer{
+    color: white;
+    margin: 100px;
+    display: grid;
+    row-gap: 25px;
+    column-gap: 25px;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: var(--main-color);
+    
+    a{
+        text-decoration: none;
+    }
+
+    .item {
+        max-width: 15vw;
+        background-color: rgba(24, 24, 24, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 5px rgb(45, 45, 45), -2px -2px 5px rgb(50, 50, 50);
+
+        img{
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+        }
+
+        .ratingOverview{
+            background-color: rgb(14, 14, 14);
+            height: 10%;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            color: yellow;
+            span{
+                margin-left: 10px;
+            }
+        }
+
+        .title{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+            span{
+                margin: 10px ;
+                display: block;
+                display: -webkit-box;
+                height: 3rem;
+                font-size: 1em;
+                font-weight: bold;
+                line-height: 1.5rem;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+               
+            }
+
+        }
+    }
+}

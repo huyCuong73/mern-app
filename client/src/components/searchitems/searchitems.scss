@@ -1,0 +1,31 @@
+.itemsContainer{
+    position: fixed;
+    background-color: black;
+    top: 60px;
+    left: 5vw;
+    width: 90vw;
+    height: 99vh;
+    z-index: 999;
+    overflow-y: scroll;
+    border: 2px rgb(54, 54, 54) solid;
+
+    &::-webkit-scrollbar
+    {
+        width: 1em;
+        height: 0.5em;
+        background-color: #000000;
+    }
+    &::-webkit-scrollbar-track
+    {
+        
+        border-radius: 10px;
+        background-color: #434343;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        width: 20px;
+        border-radius: 10px;
+        background-color: rgb(119, 119, 119);
+    }
+}
